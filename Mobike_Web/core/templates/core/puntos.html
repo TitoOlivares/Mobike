@@ -1,0 +1,47 @@
+{% extends 'core/base.html' %} 
+
+{% load static %} 
+
+{% block contenido %}
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="background-overlay text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center justify-content-center align-self-center">
+                    <h1>¡Mobike te acerca a tu lugar de destino!</h1>
+                    <p>Miles de bicicletas disponibles a tu alrededor. ¡Finaliza el recorrido en cualquier estacionamiento para bicicletas que esté cerca de tu lugar de destino!</p>
+                    <a href="#" class="btn btn-outline-info btn-lg text-white">
+                        Registrate
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'core/img/app.png' %}" alt="Imagen de App" class="img-fluid d-none d-sm-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container p-5">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                Puntos Mobike La Reina
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">CONOCE LOS 36 PUNTOS MOBIKE DE LA REINA:</h5><br>
+                <p>Los invitamos a ser parte de este notable avance en movilidad y medio ambiente, dos temas fundamentales para los vecinos de La Reina, y que se traducirá en menos vehículos y congestión, ganando en vida saludable y Alma de Barrio.</p>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1XKjgyYpCG3wxLV_i9ALX2UOMgJ7oiS_T" 
+                style="display: block; margin-left: auto; margin-right: auto;" width="640" height="480"></iframe>
+                <div class="text-center p-3">
+                    <a href="https://www.google.com/maps/d/u/0/viewer?mid=1XKjgyYpCG3wxLV_i9ALX2UOMgJ7oiS_T&ll=-33.44580188272597%2C-70.55138025000002&z=14" 
+                    class="btn btn-primary">Ver Detalle</a>
+                </div>                
+            </div>
+        </div>        
+    </div>
+</section>
+
+{% endblock %}
