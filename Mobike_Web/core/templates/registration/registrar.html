@@ -1,0 +1,37 @@
+{% extends 'registration/registration_base.html' %} 
+
+{% load static %} 
+
+
+{% block contenido %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Mobike - Login</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- LIBRERIA ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS PERSONALIZADO-->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+</head>
+
+<body>
+
+    <h2> Registro </h1>
+    <form action= "" method= "POST">
+        {% csrf_token %}
+
+        <table>
+            {{ form.as_table }}
+        </table>
+        
+        <input type="reset" value= "Limpiar">
+        <input type="submit" value= "Login">
+    </form>
+
+
+</body>
+{% endblock contenido %}
+

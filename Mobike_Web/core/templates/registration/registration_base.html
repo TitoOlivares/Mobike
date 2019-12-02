@@ -27,48 +27,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a>
+                        <a class="nav-link" href="{% url 'home' %}"><i class="fa fa-home"></i> Atr&aacute;s</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'puntos' %}">Puntos Mobike</a>
-                    </li>  
-
-                    {%if user.is_authenticated%}
-
-                        <li class="nav-item">
-                            <a class="nav-link" > Usuario: {{user.username}}</a>
-                        </li>
-                        {%if user.is_staff%}
-
-                            <li class="nav-item">
-                                <a class="nav-link" href= "{% url 'admin'%}"> Administraci&oacute;n</a>
-                            </li>
-
-                        {%endif%}
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href= "{% url 'logout'%}"> Cerrar Sesi&oacute;n</a>
-                        </li>
-
-                        
-
-                    
-
-                    {%else%}
-                    <li class="nav-item">
-                            
-                            <a class="nav-link" href= "{% url 'registro_usuario'%}"> Registrar</a>
-                    </li>
-                    
-                    
-                    <li class="nav-item">
-                        <a href= "{% url 'login' %}" class="btn btn-primary btn-md text-white" ><i class="fa fa-unlock"></i> Ingresar</a>
-                    </li>
-                    
-
-                    
-
-                    {%endif%}
+                   
                 </ul>
             </div>
         </div>
