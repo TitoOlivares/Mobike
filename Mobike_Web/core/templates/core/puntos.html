@@ -33,15 +33,21 @@
             <div class="card-body">
                 <h5 class="card-title">CONOCE LOS 36 PUNTOS MOBIKE DE LA REINA:</h5><br>
                 <p>Los invitamos a ser parte de este notable avance en movilidad y medio ambiente, dos temas fundamentales para los vecinos de La Reina, y que se traducirá en menos vehículos y congestión, ganando en vida saludable y Alma de Barrio.</p>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1XKjgyYpCG3wxLV_i9ALX2UOMgJ7oiS_T" 
-                style="display: block; margin-left: auto; margin-right: auto;" width="640" height="480"></iframe>
-                <div class="text-center p-3">
-                    <a href="https://www.google.com/maps/d/u/0/viewer?mid=1XKjgyYpCG3wxLV_i9ALX2UOMgJ7oiS_T&ll=-33.44580188272597%2C-70.55138025000002&z=14" 
-                    class="btn btn-primary">Ver Detalle</a>
-                </div>                
+                <p>Encuentra el punto Mobike mas cercano a tu ubicaci&oacute;n</p>
+
+                <div id="mapa" style="display: block; margin-left: auto; margin-right: auto;, width: 700px; height: 500px;">
+		
+			        --Mapa puntos Mobike La Reina--		
+		        </div>               
             </div>
         </div>        
     </div>
 </section>
+    <script type="text/javascript"  src="http://maps.googleapis.com/maps/api/js?v3 ">  </script>
+    <script type="text/javascript"src= "{% static 'core/script/script_mapa.js' %}"> </script>
 
 {% endblock %}
+
+
+
+    

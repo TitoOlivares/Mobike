@@ -1,0 +1,72 @@
+/* CCS NavBar */
+.navbar {
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+/* CCS Formulario */
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30%;
+    background: url(../img/background.jpg);
+    background-size: cover;
+}
+
+.contenedor {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background: #EE5A24;
+    opacity: .9;
+    padding: 25px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #FFFFFF; 
+    
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;    
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;   
+}
+
+.contenedor .helptext{
+    display: none;
+}
+
+.contenedor .boton input[type="reset"],.boton input[type="submit"] {
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: #353b48;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* CCS Footer */
+footer {    
+    background: rgba(83, 92, 104,1.0);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}

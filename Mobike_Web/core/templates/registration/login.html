@@ -16,21 +16,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--CSS PERSONALIZADO-->
     {% load static %}
-    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estilo_login.css' %}">
 </head>
 
 <body>
+    <div class="contenedor">
+        <h2> Autenticación </h1>
+        <form action= "" method= "POST">
+            {% csrf_token %}
 
-    <h2> Autenticación </h1>
-    <form action= "" method= "POST">
-        {% csrf_token %}
-
-        <table>
-            {{ form }}
-        </table>
-        
-        <input type="submit" value= "Login">
-    </form>
+            <table>
+                {{ form }}
+            </table>
+            <div class="boton">  
+                <input type="submit" value= "Login">
+            </div>
+        </form>
+    </div>
 
 
 </body>

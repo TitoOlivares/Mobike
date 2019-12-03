@@ -14,23 +14,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--CSS PERSONALIZADO-->
     {% load static %}
-    <link rel="stylesheet" href="{% static 'core/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/estilo_registro.css' %}">
 </head>
 
 <body>
+    <div class="contenedor">
+        <h2> Registro </h2>
+        <form action= "" method= "POST">
+            {% csrf_token %}
 
-    <h2> Registro </h1>
-    <form action= "" method= "POST">
-        {% csrf_token %}
-
-        <table>
-            {{ form.as_table }}
-        </table>
-        
-        <input type="reset" value= "Limpiar">
-        <input type="submit" value= "Login">
-    </form>
-
+            <table>
+                {{ form.as_table }}
+            </table>
+        <div class="boton">  
+            <input type="reset" value= "Limpiar" class="boton1">
+            <input type="submit" value= "Login" class="boton2">
+        </div>
+        </form>
+    </div>
 
 </body>
 {% endblock contenido %}
