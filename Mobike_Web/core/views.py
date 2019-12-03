@@ -18,15 +18,13 @@ def registro_usuario(request):
 
     if request.method == 'POST':
         formulario=CustomUserForm(request.POST)
-        if formulario.is_valid:
+        if formulario.is_valid():
             formulario.save()
-            username=formulario.cleaned_data['username']
-            password = formulario.cleaned_data['password']
+            username= formulario.cleaned_data['username']
+            password = formulario.cleaned_data['password1']
             user = authenticate(username=username,password=password)
             login(request,user)
-            return redirect(to='home')
-
-    ## redirigir a inicio        
+            return redirect(to='home')       
     return render(request,'registration/registrar.html',data)    
 
 def admin(request):
